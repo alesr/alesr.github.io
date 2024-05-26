@@ -280,7 +280,7 @@ func main() {
 ```
 {: .nolineno }
 
-You can run this code running [here](https://go.dev/play/p/DRvvG0TEYXa).
+You can check this code running [here](https://go.dev/play/p/DRvvG0TEYXa).
 
 That's the beauty of the decorator pattern in Go using composition. We only need to implement the methods we want to add new behaviour to, and the rest will be handled by the embedded struct.
 
