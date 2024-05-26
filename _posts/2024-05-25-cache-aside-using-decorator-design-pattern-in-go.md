@@ -121,7 +121,7 @@ func (db *MemDB) All() []*service.Item {
 ```
 {: file="cacheaside/internal/repository/memdb/memdb.go" .nolineno }
 
-Nothing crazy here, we have a Go struct `MemDB` struct embedding a [sync.Map](https://pkg.go.dev/sync#Map) to store some _items_. We also have a `New` function to create a new instance of the database, and three methods to interact with it: `Store`, `Get`, and `All`. For the sake of our demonstration that's all we need.
+Nothing crazy here, we have a Go struct `MemDB` struct embedding a `sync.Map` to store some _items_. We also have a `New` function to create a new instance of the database, and three methods to interact with it: `Store`, `Get`, and `All`. For the sake of our demonstration that's all we need.
 
 We also need to define a set of errors for our in-memory database implementation of the repository. These errors will be part of the repository package, ensuring consistency across different implementations. This way, when we implement a new concrete version of the repository, we can use the same errors to handle identical situations.
 
