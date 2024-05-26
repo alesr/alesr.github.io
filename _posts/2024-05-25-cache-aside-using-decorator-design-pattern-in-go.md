@@ -4,6 +4,8 @@ title: Cache-Aside using Decorator Design Pattern in Go
 date: 2024-05-25 11:57 +0300
 mermaid: true
 description: Combining the cache-aside pattern with the decorator design pattern in Go to create a caching mechanism.
+categories: [Go, Design Patterns]
+tags: [go, golang, design-patterns, cache, cache-aside, decorator]
 ---
 
 ## Introduction
@@ -40,9 +42,9 @@ The cache-aside pattern is a good strategy for reducing the load on the primary 
 
 ## Decorator Design Pattern
 
-In essence, the Decorator Design Pattern is simple yet effective structural pattern that allow us to add new behaviour to an object without modifying its is implementation.
+In essence, the Decorator Design Pattern is simple yet effective structural pattern that allow us to add new behaviour to an object without modifying its implementation.
 
-![Decorated Cat](/assets/img/cat_deco.gif){: width="300" height="200" .center }_the cat is intact_
+![Decorated Cat](/assets/img/cat_deco.gif){: width="300" height="200" .center }_the cat is still intact_
 
 It works by creating a new object that wraps the original object and adds new functionality to it. In Go, we can achieve this in an elegant and straightforward way by making use of interfaces and composition.
 
@@ -64,7 +66,7 @@ We want to implement a simple Go application consisting of:
 
 ### Step 1: Implement the In-memory Database (repository layer)
 
-To start, let's implement a simple in-memory database using `sync.Map` and defined some operations to interact with it.
+To start, let's implement a simple in-memory database using [sync.Map](https://pkg.go.dev/sync#Map) and defining some operations to interact with it.
 
 ```go
 package memdb
@@ -245,7 +247,7 @@ In Go, whenever we compose a struct with another struct, we we get access to the
 
 For our cache mechanism, we want to embed the repository implementation in our cache struct and override the methods that we want to add caching behaviour to, and for the methods that we don't want to add caching behaviour, we just don't implement them in the cache struct, and they will be delegated to the embedded repository implementation.
 
-Beforing jumping into the code, let's just have a quick look at a simplified example:
+Before jumping into the code, let's just have a quick look at a simplified example:
 
 ```go
 package main
@@ -300,7 +302,7 @@ type repository interface {
 }
 
 // MemCache is a cache implementation that stores items in memory.
-// It is uses as a cache-aside pattern.
+// It is used as a cache-aside pattern.
 type MemCache struct {
 	logger *slog.Logger
 	cache  sync.Map
@@ -329,7 +331,7 @@ func (c *MemCache) Get(id string) (*service.Item, error) {
 			return &item, nil
 		}
 
-		c.logger.Error("Invalid item in cache. Falling back to database and invalidating cache.", slog.String("id", id))
+		c.logger.Error("Invalid item in cache. Falling back the to database and invalidating cache.", slog.String("id", id))
 		c.cache.Delete(id)
 	} else {
 		c.logger.Info("cache miss", slog.String("id", id))
@@ -388,7 +390,7 @@ func New(logger *slog.Logger, repo repository) *MemCache {
 ```
 {: .nolineno }
 
-If we would choose a different name for the embedded repository field, we would get a compilation error:
+If we were to choose a different name for the embedded repository field, we would get a compilation error:
 
 ```go
 type MemCache struct {
@@ -458,6 +460,6 @@ func main() {
 
 In this post, we've seen how we can combine the cache-aside pattern with the decorator design pattern in Go to create a caching mechanism. We've implemented an in-memory database, a service that interacts with the database, and a cache that uses the cache-aside pattern to reduce the load on the database.
 
-The key takeaway is that by using composition and interfaces, we can create a flexible and maintainable system that allows us to switch between different implementations without changing either the domain layer or the repository layer.
+The key takeaway is that by leveraging composition and interfaces, we can create a flexible and maintainable system that allows us to switch between different implementations without changing either the domain layer or the repository layer.
 
-This approach allows us to have a cache layer that is agnostic of the underlying database by using the repository interface, and only add caching behaviour to the methods we want to cache in the cache struct when we overwrite the methods of the embedded repository implementation. When we don't implement a method in the cache struct, it will be delegated to the embedded repository implementation.
+This approach allows us to have a cache layer that is agnostic of the underlying database by using the repository interface, and only add caching behavior to the methods we want to cache in the cache struct when we overwrite the methods of the embedded repository implementation. When we don't implement a method in the cache struct, it will be delegated to the embedded repository implementation.
