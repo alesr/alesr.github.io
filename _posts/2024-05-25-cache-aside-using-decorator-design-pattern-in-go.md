@@ -373,7 +373,7 @@ type MemCache struct {
 
 We have a named field for the `logger`, a named field for `cache` which will hold our cached items, and an anonymous field for the `repository` interface. This way, we can access the methods of the embedded repository implementation directly from the cache struct.
 
-When we initialize the cache, we can't use named and anonymous fields in the same struct literal, so we need to initialize the `repository` field in the `New` function, where the `repository` field name is *must be the name of the interface we are embedding*.
+When we initialize the cache, we can't use named and anonymous fields in the same struct literal, so we need to initialize the `repository` field in the `New` function, where the `repository` field name is **must be the name of the interface we are embedding**.
 
 ```go
 type repository interface {
