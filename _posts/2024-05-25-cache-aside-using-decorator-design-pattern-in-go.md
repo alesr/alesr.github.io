@@ -316,7 +316,7 @@ func New(logger *slog.Logger, repo repository) *MemCache {
 	return &MemCache{
 		logger:     logger,
 		cache:      sync.Map{},
-        repository: repo,
+		repository: repo,
 	}
 }
 
@@ -386,7 +386,7 @@ func New(logger *slog.Logger, repo repository) *MemCache {
 	return &MemCache{
 		logger:     logger,
 		cache:      sync.Map{},
-        repository: repo,
+		repository: repo,
 	}
 }
 ```
@@ -396,9 +396,9 @@ If we were to choose a different name for the embedded repository field, we woul
 
 ```go
 type MemCache struct {
-    logger *slog.Logger
-    cache  sync.Map
-    foo repository
+	logger *slog.Logger
+	cache  sync.Map
+	foo repository
 }
 ```
 {: .nolineno }
