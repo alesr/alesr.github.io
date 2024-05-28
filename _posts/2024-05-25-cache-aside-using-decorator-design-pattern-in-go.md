@@ -357,7 +357,7 @@ func (c *MemCache) Store(item service.Item) {
 	c.cache.Store(item.ID, item)
 }
 ```
-{: file="cacheaside/internal/repository/cache/memcache/memcache.go" .nolineno }
+{: file="cacheaside/internal/service/cache/memcache/memcache.go" .nolineno }
 
 
 The core of the cache implementation is in the way we compose our `MemCache` struct:
@@ -417,7 +417,7 @@ import (
 	"log/slog"
 	"os"
 
-	"github.com/alesr/cacheaside/internal/repository/cache/memcache"
+	"github.com/alesr/cacheaside/internal/service/cache/memcache"
 	"github.com/alesr/cacheaside/internal/repository/memdb"
 	"github.com/alesr/cacheaside/internal/service"
 )
