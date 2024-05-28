@@ -429,10 +429,10 @@ func main() {
 	memdb := memdb.New()
 
 	// Initialize the cache with the in-memory database.
-	memcache := memcache.New(logger, memdb)
+	memCache := memcache.New(logger, memdb)
 
 	// Initialize the service with the cache.
-	svc := service.New(memcache,)
+	svc := service.New(memCache)
 
 	// Use the service to create some items.
 	item1 := svc.Create()
