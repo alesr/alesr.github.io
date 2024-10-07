@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Building Docker Images for Go Applications: From Pre-compiled Binaries to Multistage Builds"
+title: "Building Docker Images: Pre-compiled Binaries and Multistage Builds"
 date: 2024-06-28 20:49 +0300
 mermaid: true
-description: Discussing  multistage and pre-compiled binaries for building Docker images.
+description: Discussing multistage and pre-compiled binaries for building Docker images.
 categories: [DevOps]
 tags: [ci/cd, docker, go, golang, images]
 ---
