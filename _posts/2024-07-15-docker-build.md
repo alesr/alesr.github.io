@@ -12,7 +12,7 @@ tags: [ci/cd, docker, go, golang, images]
 
 When it comes to building Docker images for Go applications (and many other languages), there are essentially two approaches you can take: building directly in the Docker image by copying the source code and using Go installed inside the image to compile the binary, or pre-compiling the binary outside the Docker image and only copying the final binary into the image.
 
-With the introduction of multistage builds in Docker version (17.05)[https://docs.docker.com/engine/release-notes/17.05/] in 2017, the process of compiling source code and generating smaller images has become significantly more efficient. However, it’s still common to see projects that either build images from scratch or rely on pre-compiled binaries without fully understanding the trade-offs.
+With the introduction of multistage builds in Docker version [17.05](https://docs.docker.com/engine/release-notes/17.05/) in 2017, the process of compiling source code and generating smaller images has become significantly more efficient. However, it’s still common to see projects that either build images from scratch or rely on pre-compiled binaries without fully understanding the trade-offs.
 
 In this post, I’ll break down the differences between these methods and discuss how multistage builds and pre-compiled binaries  can improve your workflow and the considerations to take when choosing which of these methods.
 
