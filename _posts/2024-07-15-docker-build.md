@@ -18,7 +18,7 @@ In this post, I’ll break down the differences between these methods and discus
 
 ### The Old Days’ Approach: Setting Up the Entire Process
 
-In the old days, in order to compule a run a Go application during the Docker image build would included the sintallation of all necessary tools and dependencies to compile the source code, run it, and clean up. 
+In the old days, in order to compile and a run a Go application during the Docker image build would included the sintallation of all necessary tools and dependencies to compile the source code, run it, and clean up. 
 
 Here’s a simple example of how that looks:
 
