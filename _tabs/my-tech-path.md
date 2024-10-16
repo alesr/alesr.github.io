@@ -13,6 +13,7 @@ order: 2
     2020 : VOI
     2022 : Telia
     2023 : Bitpanda
+    2024 : Linkerfy
 ```
 
 ### Nuvem K (Portugal)
@@ -77,3 +78,9 @@ After my experience as a Product Owner, I decided to return to the developer pat
 This role provided a great opportunity to lead the implementation and support my colleagues in learning Go.
 
 **Tech Stack**: Go, PostgreSQL, Docker, Terraform, Kubernetes, Kafka.
+
+### Linkerfy (Brazil / Remote)
+
+I participated in the conception of Linkerfy, a startup that offers minisites integrated with a CRM for sales management. In this project, I focused on system design and architecture as a freelancer. My responsibilities included designing the overall system architecture to ensure a seamless integration between the CRM platform and the functionalities of the minisites, which encompassed lead management and sales automation.
+
+**Tech Stack**: AWS.
