@@ -43,7 +43,7 @@ I primarily focused on providing development, staging, and production environmen
 
 **Tech Stack**: Go, Docker, Terraform, Ansibile, Jenkins, Elasticsearch, Logstash, RabbitMq, and Kafka.
 
-### Betalo / PFC (Sweden)
+### PFC (Sweden)
 
 In 2017, I decided to move from Portugal to Sweden and move my focus now to Backend Developement.
 
