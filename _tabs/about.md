@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 4
+order: 1
 ---
 
 My name is Alessandro. I recently completed a decade working as a backend developer, and passing this personal milestone has prompted me to reflect on what this time has meant for me in terms of the experiences I've had, the lessons I've learned, and the amazing professionals I've met. I want to create a space to share the things I've learned that can be useful to others. This blog is an attempt to do that.
