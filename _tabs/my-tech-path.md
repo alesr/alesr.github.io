@@ -8,9 +8,9 @@ order: 2
  The Job History
     2014 : Nuvem K
     2016 : 3fs 
-    2017 : Marionete 
+    2016 : Marionete 
     2017 : Betalo / PFC
-    2020 : VOI
+    2019 : VOI
     2022 : Telia
     2023 : Bitpanda
     2024 : Linkerfy
