@@ -3,7 +3,7 @@ layout: post
 title: "Strategy Design Pattern"
 date: 2024-11-07 12:30 +0300
 mermaid: true
-description: "Exploring the Strategy Pattern in Go"
+description: "Exploring the Strategy Pattern in Go."
 categories: [Go, Design Patterns]
 tags: [go, golang, design-patterns, strategy-pattern, best-practices, software-design]
 ---
