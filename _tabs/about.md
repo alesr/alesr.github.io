@@ -18,3 +18,5 @@ Currently, I've decided to take a break from the corporate world, move to a smal
 I'm just starting this blog, so it will take some time to put together content. But I hope you find something useful here, and I look forward to hearing from you.
 
 ![Alessandro](/assets/img/ales1.jpeg){: width="300" height="200" .center }_whoami_
+
+*Thus, my purpose here is not to teach the method that everyone should follow in order to properly conduct their reason, but only to show how I have tried to conduct my own. Those who take it upon themselves to give precepts must consider themselves more capable than those who receive them; and if they fail in the smallest thing, they are therefore censurable. But, proposing this writing to be merely a history, or if you prefer, a fable, in which, among some examples that may be imitated, perhaps others will be found that it would be right not to follow, I hope that it will be useful to someone, without being harmful to anyone, and that all will be grateful for my frankness.* - René Descartes
