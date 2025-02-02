@@ -4,7 +4,7 @@ title: "Go Templator"
 date: 2025-01-30 09:30 +0300
 mermaid: true
 description: "Getting compile-time safety with Go templates"
-categories: [Go, Templating, Code Generation:""]
+categories: [Go, Templating, Code Generation]
 tags: [go, golang, html/template, compile-time, safety]
 ---
 
