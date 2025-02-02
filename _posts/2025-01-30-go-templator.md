@@ -4,8 +4,8 @@ title: "Go Templator"
 date: 2025-01-30 09:30 +0300
 mermaid: true
 description: "Getting compile-time safety with Go templates"
-categories: [Go, Templating]
-tags: [go, golang, templating, html/template, compile-time, safety]
+categories: [Go, Templating, Code Generation:""]
+tags: [go, golang, html/template, compile-time, safety]
 ---
 
 ## Introduction
@@ -16,6 +16,7 @@ Recently I've been working on a project that required me to build a bunch of das
 
 Let's have a look at this code:
 
+{% raw %}
 ```go
 package main
 
@@ -49,6 +50,7 @@ func main() {
     fmt.Println(out.String())
 }
 ```
+{% endraw %}
 
 What would you expect to happen when you run this code? I give you a hint: it won't be a compile-time error.
 
@@ -66,6 +68,7 @@ Why that? Because the template is expecting a field named `Foo`, but we're passi
 
 Now, what if we modify the code to check the error returned by `t.Execute`?
 
+{% raw %}
 ```go
 package main
 
@@ -99,10 +102,10 @@ func main() {
         fmt.Fprintf(os.Stderr, "Error executing template: %s", err)
         os.Exit(2)
     }
-
     fmt.Println(out.String())
 }
 ```
+{% endraw %}
 
 You guessed it! The output will be:
 
@@ -212,6 +215,7 @@ home.Execute(ctx, w, AboutData{...}) // Compile error
 
 Additionally, the registry allows passing an optional function to validate if the HTML template uses only the fields of the data structure that we've registered.
 
+{% raw %}
 ```go
 type ArticleData struct {
     Title    string
@@ -252,11 +256,13 @@ if validErr, ok := err.(*templator.ValidationError); ok {
     fmt.Printf("Error: %v\n", validErr.Err)
 }
 ```
+{% endraw %}
 
 ### Template Functions
 
 As we could normally do with the `html/template` package, we can also pass custom functions to the registry.
 
+{% raw %}
 ```go
 // Define your custom functions
 funcMap := template.FuncMap{
@@ -270,6 +276,7 @@ reg, err := templator.NewRegistry[PageData](fs, templator.WithTemplateFuncs[Page
 // Use functions in your templates:
 // <h1>{{ .Title | upper }}</h1>
 ```
+{% endraw %}
 
 ### Other Features of the Registry
 
