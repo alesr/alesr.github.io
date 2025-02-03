@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hire Me: The Quest for My Next Dream Job"
+title: "The Quest for My Next Dream Job"
 date: 2025-02-2 13:10 +0300
 mermaid: true
 description: "A reflection on my career and what I'm looking for in my next job"
@@ -16,9 +16,9 @@ After an incredible summer exploring my new home with loved ones, thoughts natur
 
 *This new chapter and the intention of going back to a long-term employment feels like a time for reflection.*
 
-As I've gathered experience over the years, I've been always curious about how the incredibly talented colleagues I met along the way managed to stay motivated to keep learning and pushing forward. The *grind is real*; there's always another sprint after the next one. That's how I realize that to stay engaged, I need to be in a domain that excites me, where there are plenty of different skills to develop (not only coding ones), and opportunities to contribute in diverse ways. I'm a happier developer when I surround myself with people who are attentive to details, not necessarily to say that I want to work only with those at the peak of their game, but with those who take pride in delivering quality and supporting the team's success. The most successful and plesant developers I've met understand that the goal is not to deliver the best individual contribution and feed their egos, but to help the team to perform their best, together. And with that, also help themselves, by enabling others to grow and contribute, taking a share of the responsibilities of the team. Best recipe for avoiding burnouts, getting tons of satisfaction, recognition and develop friendships, by the way.
+As I've gathered experience over the years, I've been always curious about how the incredibly talented colleagues I met along the way managed to stay motivated to keep learning and pushing forward. The *grind is real*; there's always another sprint after the next one. That's how I realized that to stay engaged, I need to be in a domain that excites me, where there are plenty of different skills to develop (not only coding ones), and opportunities to contribute in diverse ways. I'm a happier developer when I surround myself with people who are attentive to details, not necessarily to say that I want to work only with those at the peak of their game, but with those who take pride in delivering quality and supporting the team's success. The most successful and plesant developers I've met understand that the goal is not to deliver the best individual contribution and feed their egos, but to help the team to perform their best, together. And with that, also help themselves, by enabling others to grow and contribute, taking a share of the responsibilities of the team. Best recipe for avoiding burnouts, getting tons of satisfaction, recognition and develop friendships, by the way.
 
-Now that I've opened my LinkedIn profile and started to look for opportunities, I've also started being contacted by recruiters about all sorts of openings, which of course, I'm grateful for. These, together with the job postings I've been applying to myself, made me think about some weird dynamics going on in the current market. The entire hiring process seems very transactional, and dry. I've been asked to fill out forms, take automated coding challenges online, sometimes even before the initial conversation, and when the conversation happens is not uncommion for the first important question asked be about how much I'm willing to earn. I understand that companies need to filter out candidates while being mindful about their limited resources, but I can't help but feel that the process is missing something hugely important not only for the candidates, but maybe in a worse way, hurting the companies themselves. After all, candidates often develop a sense of connection between the hiring process and the company's culture and values, leading them to decide whether to move forward or walk away. While companies, I have the feeling, are missing out on great talents not even being aware of what in their hiring process is driving them away. This might seem a critique to recruiters and people in charge of the interviews, but I think the problem is deeper than that. It's a systemic issue, related to the current economics, an overall lack of experience, and voice from engineers participating in the process on the company's side. I'm not going to extend on that in this post though, but I want to talk about my opinion on what makes a good hiring process, and what I'm looking for in my next job interview.
+Now that I've opened my LinkedIn profile and started to look for opportunities, I've also started being contacted by recruiters about all sorts of openings, which of course, I'm grateful for. These, together with the job postings I've been applying to myself, made me think about some weird dynamics going on in the current market. The entire hiring process seems very transactional, and dry. I've been asked to fill out forms, take automated coding challenges online, sometimes even before the initial conversation, and when the conversation happens is not uncommon for the first important question asked be about how much I'm willing to earn. I understand that companies need to filter out candidates while being mindful about their limited resources, but I can't help but feel that the process is missing something hugely important not only for the candidates, but maybe in a worse way, hurting the companies themselves. After all, candidates often develop a sense of connection between the hiring process and the company's culture and values, leading them to decide whether to move forward or walk away. While companies, I have the feeling, are missing out on great talents not even being aware of what in their hiring process is driving them away. This might seem a critique to recruiters and people in charge of the interviews, but I think the problem is deeper than that. It's a systemic issue, related to the current economics, an overall lack of experience, and voice from engineers participating in the process on the company's side. I'm not going to extend on that in this post though, but I want to talk about my opinion on what makes a good hiring process, and what I'm looking for in my next job interview.
 
 I've been doing software development for a while now, and I've been lucky to work with some great teams and companies and am very fulfilled about how I've managed to succeed in the positions I've worked on, even through the challenging moments along the way. After ten years working as a software engineer, I can say that at least 50% of my time is not writing code. This wasn't the case in my initial years as a junior/mid-level developer, but as time passed, even if I produce a lot of code, I spend a lot of my time communicating!
 
@@ -40,9 +40,25 @@ I've been doing software development for a while now, and I've been lucky to wor
 
 I could go on, but I think you got the idea. So, when in an interview process I'm asked to inverse a binary tree, the company is telling me what important things they are not considering on their hiring and what kind of reality I might find if I join them.
 
-## Fun Time & I Got You Covered
+## Fun Time & Solution Space
 
 OK, enough of constructive feedback. If you've made it this far into this reading, and happen to be hiring, **and since this is all about me getting my next dream job**, I have a little contribution to give in order to help show how amazing a developer I am without making you read a single line of code! This post, before exploding in size, was intended to be posted on LinkedIn. And since 89.74% of the posts these days are about AI, please allow me to follow the trend.
+
+But before that, a quick word about how coding assignments can tell you so much about a candidate!
+
+On February of 2016, I made my first coding assignment to get a job! Back then, I was working as a Full-Stack Developer at a small but extraordinary company in Évora, Portugal. And if I'm going to mention Nuvem K, I need to say that if I managed to become a good professional, understand the synergy between Product & Engineering, what Agile is (the good one), and many other things beyond coding, it's because Márcio Machado and Luis Palolo supported and guided me from the get-go. Sorry for the digression.
+
+After about two years working there, I felt that I needed to move on from PHP/JS and start working with tools that would differentiate me in the market and on more challenging projects. Without even going to Slovenia, I found a company in a small town that was looking for a mid-level developer to work with Go and Docker. DevOps and Microservices were the waves I wanted to ride! So, I applied, and they sent me a coding assignment.
+
+The assignment was about building a simple (or so I thought) Go application to decode MSISDNs. First, I had no idea what an MSISDN was. We didn't have AIs back then, and I was very inexperienced with the tools I wanted to work with. But I really wanted that job! So, I started to research MSISDNs. I turned out to have a friend working at the Brazilian National Telecommunications Agency - ANATEL, and I asked every possible question I had about MSISDNs. I also knew from the job posting that the company was using Docker.
+
+With that in mind, I built an MSISDN decoder completely overengineered, but that helped me learn so much about Go and Docker in a domain I had no idea about. This assignment helped me secure a job working with some of the most talented people I've worked with to date. I'm not going to elaborate further, but I think you can see how a coding assignment can reveal so much about a candidate's drive, curiosity, and ability to learn and adapt. And I went to Slovenia, knowing that they had a clear picture of my strengths and weaknesses, and that tranquilized me a lot in taking the decision to move to a new country. That's what a sensible hiring process can do for both sides.
+
+Btw, this coding assignment repository that has been archived for a while now has 4 starts on Github. More than many of my *serious* projects. 😅 Please look at it at your discretion, [the code is old and ugly](https://github.com/alesr/msisdn-decoder), but it's has a special place in my heart.
+
+Why so many other companies think they saving the candidate's time by not giving them a fair platform to show their skills and really show that they want to work for them is beyond my comprehension. But I digress again.
+
+### Now the fun part!
 
 During a couple of days last year, I wanted to explore the idea of creating a matchmaking program using Go channels. Conceptually, this program would be connected to a lobby of a multiplayer game and provide a way for the game developers to find matches between players hosting games and players looking for games to join, based on the game modes (1v1, 2v2, 3v3, and so on). The application would then handle the matches and deal with matching search timeouts. So far, without any optimizations, it can handle a peak around 31K requests/second on my machine, which means literally nothing, but it was fun to build, again, in a couple of days. So, let's ask ChatGPT, Chat Xi Jinping, Chat Elon Musk and others what they think about me as a senior Go developer based on this project.
 
@@ -66,14 +82,17 @@ Remember, this was built in just a few days for fun - I'm more interested in wha
 Here's the link to the project repo: https://github.com/alesr/tango
 ```
 
-### ChatGPT anwser
+#### ChatGPT
 
 ```
-Your development of Tango over a few days demonstrates a solid grasp of Go and software engineering principles. Here's an analysis based on your code:
+Your development of Tango over a few days demonstrates a solid grasp of Go and software engineering principles.
+
+Here's an analysis based on your code:
 
 Problem Complexity and Approach
 
-Implementing a matchmaking service involves managing concurrent operations, player states, and timeouts. Tackling this indicates your comfort with complex, real-time systems and concurrency in Go.
+Implementing a matchmaking service involves managing concurrent operations, player states, and timeouts. 
+Tackling this indicates your comfort with complex, real-time systems and concurrency in Go.
 
 System Design, Modularity, and Separation of Concerns
 
@@ -85,7 +104,8 @@ This separation shows a clear understanding of modularity and the single respons
 
 Understanding of Go's Advanced Features and Ecosystem
 
-You've effectively utilized Go's concurrency primitives, such as goroutines and channels, to manage matchmaking operations and timeouts. This demonstrates proficiency in Go's concurrency model.
+You've effectively utilized Go's concurrency primitives, such as goroutines and channels, to manage matchmaking operations and timeouts.
+This demonstrates proficiency in Go's concurrency model.
 
 Design Patterns and Architectural Decisions
 
@@ -93,15 +113,18 @@ The use of background processes for handling operations and timeouts aligns with
 
 Balancing Clean Code Principles with Practical Implementations
 
-Your code is concise and adheres to Go's idiomatic practices. Functions are focused, and naming conventions are clear, enhancing readability and maintainability.
+Your code is concise and adheres to Go's idiomatic practices. 
+Functions are focused, and naming conventions are clear, enhancing readability and maintainability.
 
 Code Organization and Structure
 
-The repository is well-structured, with separate packages and files for different functionalities. This organization indicates experience in managing larger codebases and understanding the importance of clear project structure.
+The repository is well-structured, with separate packages and files for different functionalities. 
+This organization indicates experience in managing larger codebases and understanding the importance of clear project structure.
 
 Performance Considerations and Trade-offs
 
-By leveraging goroutines and channels, you've built a system capable of handling multiple matchmaking operations concurrently. This approach suggests an awareness of performance optimization in Go.
+By leveraging goroutines and channels, you've built a system capable of handling multiple matchmaking operations concurrently. 
+This approach suggests an awareness of performance optimization in Go.
 
 Suitability for a Senior Go Developer Role
 
@@ -121,7 +144,7 @@ Overall, Tango reflects your proficiency in Go and your capability to handle com
 
 ---
 
-### Grok 2:
+#### Grok 2
 
 ```
 Based on the information available about the Tango project, here's an analysis of your capabilities as a Go developer:
@@ -173,7 +196,7 @@ In summary, while this project was created in a short timeframe for fun, it show
 
 ---
 
-### Perplexity
+#### Perplexity
 
 ```
 Based on analysis of Tango's implementation, here's an assessment of your Go development capabilities and problem-solving approach:
@@ -270,7 +293,7 @@ The combination of technical depth (concurrency models), system thinking (lifecy
 
 ---
 
-### Chat Xi Jinping anwser (aka DeepSeek)
+#### Chat Xi Jinping (aka DeepSeek)
 
 ```
 (Due to technical issues, the search service is temporarily unavailable.)
@@ -282,4 +305,4 @@ By the time of this writing, DeepSeek was not available to provide an answer. I'
 
 That's it! I hope you enjoyed this long post, and in case you're hiring, I hope you consider me for your next Go developer role. And remember, the Artificial is Intelligent, but the Intelligence is Human. 🤖🧠💙🕺
 
-<div style="width:100%;height:0;padding-bottom:72%;position:relative;"><iframe src="https://giphy.com/embed/MAWxnzv6ZGd7q" width="50%" height="50%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/badass-neil-degrasse-tyson-watch-out-MAWxnzv6ZGd7q">via GIPHY</a></p>
+<div style="width:100%;height:0;padding-bottom:72%;position:relative;"><iframe src="https://giphy.com/embed/MAWxnzv6ZGd7q" width="50%" height="50%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
