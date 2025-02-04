@@ -78,7 +78,8 @@ Beyond just the technical aspects, I'm curious about your analysis of:
 - Performance considerations and trade-offs in my implementation
 - And finally, why would you consider me for a senior Go developer role?
 
-Remember, this was built in just a few days for fun - I'm more interested in what it indicates about my skills and problem-solving approach than a critique of what's missing.
+Remember, this was built in just a few days for fun.
+I'm more interested in what it indicates about my skills and problem-solving approach than a critique of what's missing.
 
 Here's the link to the project repo: https://github.com/alesr/tango
 ```
@@ -105,7 +106,7 @@ Here's the link to the project repo: https://github.com/alesr/tango
 > 
 > Understanding of Go's Advanced Features and Ecosystem
 > 
-> You've effectively utilized Go's concurrency primitives, such as goroutines and channels, to manage matchmaking operations > and timeouts.
+> You've effectively utilized Go's concurrency primitives, such as goroutines and channels, to manage matchmaking operations and timeouts.
 > This demonstrates proficiency in Go's concurrency model.
 > 
 > Design Patterns and Architectural Decisions
@@ -162,11 +163,11 @@ Here's the link to the project repo: https://github.com/alesr/tango
 > Understanding of Go's Advanced Features and Ecosystem
 > 
 > - Go Features: You leverage Go's concurrency model with goroutines and channels, which is evident from how you handle operations and timeouts. Your use of context for managing operation lifecycles shows an understanding of more advanced Go > patterns.
-> - Ecosystem: While not directly mentioned, the use of standard libraries and the structure typical to Go projects suggest > familiarity with Go's ecosystem, including package management and testing conventions.
+> - Ecosystem: While not directly mentioned, the use of standard libraries and the structure typical to Go projects suggest familiarity with Go's ecosystem, including package management and testing conventions.
 > 
 > Design Patterns and Architectural Decisions
 > 
-> - Design Patterns: The project uses a form of the producer-consumer pattern with queues for matchmaking, which is a smart > choice for managing workload in a Go environment. 
+> - Design Patterns: The project uses a form of the producer-consumer pattern with queues for matchmaking, which is a smart choice for managing workload in a Go environment. 
 > - Architecture: The architecture seems event-driven, with players enqueuing for matches, which is appropriate for real-time systems where state changes need to trigger actions.
 > 
 > Code Cleanliness vs. Practical Implementation
@@ -176,7 +177,7 @@ Here's the link to the project repo: https://github.com/alesr/tango
 > 
 > Code Organization and Structure
 > 
-> - Organization: The structure of your repository, with clear separation of concerns in different files/packages, suggests > experience in organizing code for larger projects, which is often a sign of seasoned developers.
+> - Organization: The structure of your repository, with clear separation of concerns in different files/packages, suggests experience in organizing code for larger projects, which is often a sign of seasoned developers.
 > 
 > Performance Considerations and Trade-offs
 > 
@@ -295,6 +296,8 @@ By the time of this writing, DeepSeek was not available to provide an answer. I'
 
 ---
 
-That's it! I hope you enjoyed this long post, and in case you're hiring, I hope my insights give you ideas of what to look for in your next candidate. And if you have an interesting project and is look for a Go developer, I'd love to hear from you!
+If you want to know more Tango, you can check the repository [here](https://github.com/alesr/tango).
+
+That's it! I hope you enjoyed this long post. And, if you're looking for a team player who works remotely from Crete, brings a positive attitude, and has over 10 years of professional experience with Go - or if you're simply hiring for your company - I hope the experiences and insights I share in this post can work for both of us ✌️
 
 <div style="width:100%;height:0;padding-bottom:72%;position:relative;"><iframe src="https://giphy.com/embed/MAWxnzv6ZGd7q" width="50%" height="50%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
