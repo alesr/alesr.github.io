@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Writing Intentional Go Code: Syntax vs Semantics in Escape Analysis"
+title: "Pointer Initialization: Semantics Matter"
 date: 2025-02-5 11:30 +0300
 mermaid: true
-description: ""
+description: "Writing Intentional Go Code Through Mindful Pointer Initialization"
 categories: [Best Practices, Go, Escape Analysis, Code Quality]
 tags: [go, golang, escape analysis, code quality, code readability, variable initialization, programming practices]
 ---
