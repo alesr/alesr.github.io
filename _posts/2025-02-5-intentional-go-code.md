@@ -34,12 +34,12 @@ package escapeanalysis
 type Foo struct{ val string }
 
 func foo1() *Foo {
-    f := &Foo{"foo2"}
+    f := &Foo{"foo1"}
     return f
 }
 
 func foo2() *Foo {
-    f := Foo{"foo1"}
+    f := Foo{"foo2"}
     return &f
 }
 ```
@@ -90,12 +90,12 @@ While it's important to know that both functions are escaping their values to th
 
 ```go
 func foo1() *Foo {
-    f := &Foo{"foo2"}
+    f := &Foo{"foo1"}
     return f
 }
 
 func foo2() *Foo {
-    f := Foo{"foo1"}
+    f := Foo{"foo2"}
     return &f
 }
 ```
@@ -104,7 +104,7 @@ In both functions, we are returning a pointer to a `Foo` struct. However, the wa
 
 The difference between these two functions is not only in the syntax but in the semantics. If you're feeling confused, think about it this way: syntax is how we write the code, and semantics is the meaning of the code.
 
-In the case of `foo1`, we are binding together how the variable is being initialized with the way it's being used in the code. This means that we are assuming the caller of the function is going to use the value of `f` as a pointer to a `Foo` struct. In some cases, this can be exactly what you want to do:
+In the case of `foo1`, we are binding together how the variable is being initialized with the way it's being used in the code. This means that we are assuming that who is initializing wants to use `f` as a pointer to a `Foo` struct. In some cases, this can be exactly what you want to do:
 
 ```go
 // Good - & groups with allocation
