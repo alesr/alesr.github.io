@@ -153,16 +153,16 @@ Here's the link to the project repo: https://github.com/alesr/tango
 > Complexity of the Problem and Approach
 > 
 > - Problem Complexity: You chose to implement a matchmaking service, which involves managing concurrent operations, handling player queues, and match creation. This problem space is complex due to the need for real-time processing and efficient resource management, particularly in a game-like scenario where latency can impact user experience.
-> - Approach: Your approach reflects an understanding of concurrent programming in Go. By focusing on player queues and match creation, you demonstrate capability in dealing with asynchronous operations, which is crucial for systems requiring > high throughput and low latency.
+> - Approach: Your approach reflects an understanding of concurrent programming in Go. By focusing on player queues and match creation, you demonstrate capability in dealing with asynchronous operations, which is crucial for systems requiring high throughput and low latency.
 > 
 > System Design, Modularity, and Separation of Concerns
 > 
 > - Modularity: The project structure suggests you've compartmentalized different functionalities (like match creation, player management) which indicates good separation of concerns. This is evident from the mention of background processes like an operation processor and a timeout checker, showing a modular design where each component has its responsibilities.
-> - System Design: Your use of two main background processes for handling matches and checking timeouts shows a thoughtful > design that addresses different aspects of the system independently, which is key in scalable system architecture.
+> - System Design: Your use of two main background processes for handling matches and checking timeouts shows a thoughtful design that addresses different aspects of the system independently, which is key in scalable system architecture.
 > 
 > Understanding of Go's Advanced Features and Ecosystem
 > 
-> - Go Features: You leverage Go's concurrency model with goroutines and channels, which is evident from how you handle operations and timeouts. Your use of context for managing operation lifecycles shows an understanding of more advanced Go > patterns.
+> - Go Features: You leverage Go's concurrency model with goroutines and channels, which is evident from how you handle operations and timeouts. Your use of context for managing operation lifecycles shows an understanding of more advanced Go patterns.
 > - Ecosystem: While not directly mentioned, the use of standard libraries and the structure typical to Go projects suggest familiarity with Go's ecosystem, including package management and testing conventions.
 > 
 > Design Patterns and Architectural Decisions
@@ -181,7 +181,7 @@ Here's the link to the project repo: https://github.com/alesr/tango
 > 
 > Performance Considerations and Trade-offs
 > 
-> - Performance: By focusing on concurrent operations, you're addressing performance directly, although it's noted as an experimental project not yet ready for production. This shows awareness of performance implications and the trade-offs in > rapid development versus optimization.
+> - Performance: By focusing on concurrent operations, you're addressing performance directly, although it's noted as an experimental project not yet ready for production. This shows awareness of performance implications and the trade-offs in rapid development versus optimization.
 > 
 > Why Consider for a Senior Go Developer Role?
 > 
