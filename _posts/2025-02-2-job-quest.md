@@ -60,7 +60,7 @@ Why so many other companies think they're saving the candidate's time by not giv
 
 ### Now the fun part!
 
-During a couple of days last year, I wanted to explore the idea of creating a matchmaking program using Go channels. Conceptually, this program would be connected to a lobby of a multiplayer game and provide a way for the game developers to find matches between players hosting games and players looking for games to join, based on the game modes (1v1, 2v2, 3v3, and so on). The application would then handle the matches and deal with matching search timeouts. So far, without any optimizations, it can handle a peak around 31K requests/second on my machine, which means literally nothing, but it was fun to build, again, in a couple of days. So, let's ask ChatGPT, Chat Xi Jinping, Chat Elon Musk and others what they think about me as a senior Go developer based on this project.
+During a couple of days last year, I wanted to explore the idea of creating a matchmaking program using Go channels. Conceptually, this program would be connected to a lobby of a multiplayer game and provide a way for the game developers to find matches between players hosting games and players looking for games to join, based on the game modes (1v1, 2v2, 3v3, and so on). The application would then handle the matches and deal with matching search timeouts. So far, without any optimizations, it can handle a peak around 31K requests/second on my machine, which means literally nothing, but it was fun to build, again, in a couple of days. So, let's ask ChatGPT, Chat Xi Jinping and Chat Elon Musk what they think about me as a senior Go developer based on this project.
 
 This is the prompt I'm passing to each of them:
 
@@ -196,7 +196,7 @@ Here's the link to the project repo: https://github.com/alesr/tango
 
 ---
 
-#### Perplexity
+#### Chat Xi Jinping (via Perplexity)
 
 > Based on analysis of Tango's implementation, here's an assessment of your Go development capabilities and problem-solving approach:
 > 
@@ -285,14 +285,6 @@ Here's the link to the project repo: https://github.com/alesr/tango
 >The combination of technical depth (concurrency models), system thinking (lifecycle management), and pragmatism (load testing) would justify consideration for senior roles requiring complex system development in Go. Your ability to balance experimental exploration with production-like patterns indicates maturity beyond just coding skill.
 
 [Perplexity](https://www.perplexity.ai/search/i-built-tango-as-a-hobby-proje-9sE905X3Ra6DqpuPugWSrg#0)
-
----
-
-#### Chat Xi Jinping (aka DeepSeek)
-
-> (Due to technical issues, the search service is temporarily unavailable.)
-
-By the time of this writing, DeepSeek was not available to provide an answer. I'll update this post as soon as I get the answer.
 
 ---
 
