@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Talks That We Love I: Rob Pike on Software Engineering"
+title: "Talks We Love I: Rob Pike on Software Engineering"
 date: 2025-03-19 23:37 +0300
 mermaid: true
 description: "Kicking off a series of talks I love. First up: Rob Pike."
-categories: [Talks That We Love]
+categories: [Talks We Love]
 tags: [Rob Pike, software engineering]
 ---
 
