@@ -97,7 +97,7 @@ And that is why tooling that improves visibility still matters, especially in an
 
 ## Tool of the Day
 
-All this, of course, brings us to the Tool of the Day. After all, we're here to support European software and jobs, right? =]
+All this, of course, brings us to the Tool of the Day =]
 
 [Lacune](https://github.com/alesr/lacune) (French for "gap") is a small TUI app for accessing test coverage in Go code. It's not a replacement for VSCode inline coverage, but if you don't have it in your editor, as I don't, you might make good use of Lacune.
 
