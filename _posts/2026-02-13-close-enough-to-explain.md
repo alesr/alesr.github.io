@@ -58,6 +58,9 @@ If it wasn't, AI helps you ship faster into a wall.
 
 And some of the same practices that lead companies into unnecessary trouble and inefficiency are usually those that make the company unable to understand its own issues.
 
+![XKCD: For the Sake of Simplicity](https://imgs.xkcd.com/comics/for_the_sake_of_simplicity.png)
+*[Source: XKCD #2587](https://xkcd.com/2587/)*
+
 Conversely, the best thing about software engineering today is that it empowers the engineer to do what has always been its highest point: **to apply good taste when solving problems.**
 
 When this new capability is adopted within a context of already solid engineering and professional practices, it becomes not only a tool for innovation but also makes software engineering more rewarding, interesting, and fun.
