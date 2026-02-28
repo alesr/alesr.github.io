@@ -7,7 +7,6 @@ order: 5
 
 A curated list of talks and videos I find insightful.
 
-## Watchlist
 
 {% assign watchlist_posts = site.posts | where_exp: "post", "post.categories contains 'Watchlist'" %}
 
