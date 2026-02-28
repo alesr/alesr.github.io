@@ -2,7 +2,7 @@
 layout: post
 title: "What Makes a Great Developer Experience?"
 date: 2026-02-28 08:00 +0200
-description: "A practical talk on what actually improves developer experience across tools, workflows, and teams."
+description: "on what actually improves developer experience across tools, workflows, and teams"
 hidden: true
 categories: [Watchlist, Developer Experience]
 tags: [video, talk, developer-experience, dx, tooling, engineering]

@@ -2,7 +2,7 @@
 layout: post
 title: "Feelings are Facts: Love, Privacy, and the Politics of Intellectual Shame"
 date: 2026-02-27 12:00 +0200
-description: "A sharp talk by Meredith Whittaker on privacy, intimacy, shame, and the shape of modern technology."
+description: "Meredith Whittaker on privacy, intimacy, shame, and the shape of modern technology."
 hidden: true
 categories: [Watchlist, Privacy, Society]
 tags: [video, talk, privacy, intimacy, shame, tech-politics, ccc, 38c3, meredith-whittaker]

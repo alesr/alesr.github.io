@@ -48,24 +48,28 @@ layout: default
 {% endif %}
 
 {% if paginator.page == 1 and watchlist_latest_posts.size > 0 %}
-  <div class="card-wrapper card mb-4">
-    <div class="card-body">
-      <h2 class="h5 card-title mb-2">Latest from Watchlist</h2>
-      <ul class="mb-0 ps-3">
-        {% for item in watchlist_latest_posts limit: 3 %}
-          <li class="mb-2">
-            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-            <div class="text-muted">
-              {% include datetime.html date=item.date lang=lang %}
-              {% if item.description %}
-                - {{ item.description }}
-              {% endif %}
-            </div>
-          </li>
-        {% endfor %}
-      </ul>
+  <article class="card-wrapper card mb-4">
+    <div class="row g-0" style="background: var(--card-bg); box-shadow: var(--card-shadow); border-radius: 0.625rem;">
+      <div class="col-md-12">
+        <div class="card-body">
+          <h2 class="h5 card-title mb-2" style="color: var(--heading-color);">Latest from Watchlist</h2>
+          <ul class="content list-unstyled ps-0 mb-0">
+            {% for item in watchlist_latest_posts limit: 3 %}
+              <li class="lh-lg">
+                <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                <div style="color: var(--text-muted-color);">
+                  {% include datetime.html date=item.date lang=lang %}
+                  {% if item.description %}
+                    - {{ item.description }}
+                  {% endif %}
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
+  </article>
 {% endif %}
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
