@@ -75,7 +75,7 @@ Returning to Portugal, I joined a consulting firm to master the "Ops" side of th
 
 **Role**: Senior Backend Developer
 
-In 2017, I moved to Stockholm to join a high-performing team. We were tasked with maintaining a legacy PHP payment application and building in Go what would become **Sweden’s first neo-bank**.
+In 2017, I moved to Stockholm to join a high-performing team. We were tasked with maintaining a legacy PHP payment application and building in Go what would become Sweden’s first neo-bank.
 
 **Tech Stack**:
 
@@ -151,7 +151,7 @@ At GWI, I focus on high-level architecture and organizational impact. I was resp
 **Key Lessons Learned**:
 
   * **Architectural Leadership**: I led the definition of production-readiness, testability and the implementation of monitoring through Service Level Indicators (SLIs).
-  * **AI & Modern Protocols**: I introduced the **Model Context Protocol (MCP)** to the organization, integrating product features to AI integration.
+  * **AI & Modern Protocols**: I introduced the Model Context Protocol (MCP) to the organization, integrating product features to AI integration.
 
 ---
 
