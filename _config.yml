@@ -28,9 +28,6 @@ url: "https://stdout.alesr.me"
 github:
   username: alesr # change to your github username
 
-twitter:
-  username: alesr_dev # change to your twitter username
-
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
