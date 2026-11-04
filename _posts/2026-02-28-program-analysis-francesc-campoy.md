@@ -5,7 +5,7 @@ date: 2026-02-27 20:00 +0200
 description: "program analysis and what static tooling can reveal about real codebases"
 hidden: true
 categories: [Watchlist, Go, Program Analysis]
-tags: [video, talk, go, golang, static-analysis, tooling, francesc-campoy, golang-uk, ai, ssa]
+tags: [video, talk, go, golang, static-analysis, tooling, francesc-campoy, golang-uk, ai-generated-code, ssa]
 ---
 
 Old talk video, but so relevant today. With more AI-generated code, there's more demand for dev tools that support engineers in accessing static and dynamic analysis data.
