@@ -12,7 +12,7 @@ tags: [go, golang, design-patterns, strategy-pattern, best-practices, software-d
 
 Software is made up of algorithms and data. On the data side, we have data structures, and on the algorithm side, we have Design Patterns. Design Patterns are reusable solutions to common problems in software design, and knowing a few of them can help you write better code more efficiently. Moreover, using them makes your pull requests immediately more familiar to your colleagues and easier to review.
 
-After writing the post about the [Cache-Aside Pattern](https://alesr.github.io/posts/cache-aside-using-decorator-design-pattern-in-go/), I thought it would be a good exercise to compile a list of design patterns I've used over the years. This would serve as a reference for myself, a resource to share with colleagues when breaking down feature implementations, and a guide for others interested in learning more about this topic.
+After writing the post about the [Cache-Aside Pattern](/posts/cache-aside-using-decorator-design-pattern-in-go/), I thought it would be a good exercise to compile a list of design patterns I've used over the years. This would serve as a reference for myself, a resource to share with colleagues when breaking down feature implementations, and a guide for others interested in learning more about this topic.
 
 In this post, we'll explore what I consider one of the most common design patterns in Go: the Strategy Pattern. We'll examine what it is, how it works, and when it might be appropriate to use it.
 
