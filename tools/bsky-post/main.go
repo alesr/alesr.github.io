@@ -6,6 +6,7 @@ import (
 	"encoding/xml"
 	"fmt"
 	"html"
+	"io"
 	"net/http"
 	"net/url"
 	"os"
@@ -16,6 +17,27 @@ import (
 
 type feed struct {
 	Entries []entry `xml:"entry"`
+}
+
+// apiClient carries a timeout; do() adds the User-Agent. Proxies such as
+// Cloudflare treat agent-less requests from datacenter IPs as bots (403).
+var apiClient = &http.Client{Timeout: 30 * time.Second}
+
+const userAgent = "blog-announcer/1.0 (https://stdout.alesr.me)"
+
+// do sends req with the announcer User-Agent.
+func do(req *http.Request) (*http.Response, error) {
+	req.Header.Set("User-Agent", userAgent)
+	return apiClient.Do(req)
+}
+
+// statusError includes a response-body snippet so proxy blocks are diagnosable.
+func statusError(op string, resp *http.Response) error {
+	body, _ := io.ReadAll(io.LimitReader(resp.Body, 200))
+	if len(body) > 0 {
+		return fmt.Errorf("%s: status %s: %s", op, resp.Status, strings.TrimSpace(string(body)))
+	}
+	return fmt.Errorf("%s: status %s", op, resp.Status)
 }
 
 type entry struct {
@@ -95,13 +117,18 @@ func main() {
 
 func createSession(pds, handle, password string) (string, error) {
 	body, _ := json.Marshal(map[string]string{"identifier": handle, "password": password})
-	resp, err := http.Post(pds+"/xrpc/com.atproto.server.createSession", "application/json", bytes.NewReader(body))
+	req, err := http.NewRequest(http.MethodPost, pds+"/xrpc/com.atproto.server.createSession", bytes.NewReader(body))
+	if err != nil {
+		return "", err
+	}
+	req.Header.Set("Content-Type", "application/json")
+	resp, err := do(req)
 	if err != nil {
 		return "", err
 	}
 	defer resp.Body.Close()
 	if resp.StatusCode != http.StatusOK {
-		return "", fmt.Errorf("status %s", resp.Status)
+		return "", statusError("createSession", resp)
 	}
 	var out struct {
 		AccessJwt string `json:"accessJwt"`
@@ -113,13 +140,17 @@ func createSession(pds, handle, password string) (string, error) {
 }
 
 func fetchFeed(feedURL string) ([]entry, error) {
-	resp, err := http.Get(feedURL)
+	req, err := http.NewRequest(http.MethodGet, feedURL, nil)
+	if err != nil {
+		return nil, err
+	}
+	resp, err := do(req)
 	if err != nil {
 		return nil, err
 	}
 	defer resp.Body.Close()
 	if resp.StatusCode != http.StatusOK {
-		return nil, fmt.Errorf("status %s", resp.Status)
+		return nil, statusError("fetch feed", resp)
 	}
 	var f feed
 	if err := xml.NewDecoder(resp.Body).Decode(&f); err != nil {
@@ -136,13 +167,13 @@ func postedURIs(pds, accessJwt, handle string) (map[string]bool, error) {
 		return nil, err
 	}
 	req.Header.Set("Authorization", "Bearer "+accessJwt)
-	resp, err := http.DefaultClient.Do(req)
+	resp, err := do(req)
 	if err != nil {
 		return nil, err
 	}
 	defer resp.Body.Close()
 	if resp.StatusCode != http.StatusOK {
-		return nil, fmt.Errorf("status %s", resp.Status)
+		return nil, statusError("listRecords", resp)
 	}
 	var out struct {
 		Records []struct {
@@ -196,13 +227,13 @@ func createRecord(pds, accessJwt, handle, text, uri, title, desc string) error {
 	}
 	req.Header.Set("Content-Type", "application/json")
 	req.Header.Set("Authorization", "Bearer "+accessJwt)
-	resp, err := http.DefaultClient.Do(req)
+	resp, err := do(req)
 	if err != nil {
 		return err
 	}
 	defer resp.Body.Close()
 	if resp.StatusCode != http.StatusOK {
-		return fmt.Errorf("status %s", resp.Status)
+		return statusError("createRecord", resp)
 	}
 	return nil
 }
