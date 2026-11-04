@@ -89,7 +89,7 @@ jobs:
         env:
           HANDLE: ${{ secrets.BSKY_HANDLE }}
           APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
-          PDS_URL: https://bsky.social
+          PDS_URL: https://pds.alesr.me
           FEED_URL: https://stdout.alesr.me/feed.xml
         run: |
           if [ -z "$HANDLE" ] || [ -z "$APP_PASSWORD" ]; then
