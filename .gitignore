@@ -25,3 +25,6 @@ package-lock.json
 # Misc
 _sass/dist
 assets/js/dist
+
+# Local Go build artifacts
+tools/bsky-post/bsky-post

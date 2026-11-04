@@ -71,3 +71,29 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  notify:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.26"
+      - name: Wait for deployment to propagate
+        run: sleep 30
+      - name: Announce on Bluesky
+        working-directory: tools/bsky-post
+        env:
+          HANDLE: ${{ secrets.BSKY_HANDLE }}
+          APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+          PDS_URL: https://bsky.social
+          FEED_URL: https://stdout.alesr.me/feed.xml
+        run: |
+          if [ -z "$HANDLE" ] || [ -z "$APP_PASSWORD" ]; then
+            echo "BSKY_HANDLE or BSKY_APP_PASSWORD not set; skipping announce."
+            exit 0
+          fi
+          go run .
