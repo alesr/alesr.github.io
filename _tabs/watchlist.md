@@ -2,7 +2,7 @@
 layout: page
 title: Watchlist
 icon: fas fa-photo-film
-order: 5
+order: 6
 ---
 
 A curated list of talks and videos I find insightful.
