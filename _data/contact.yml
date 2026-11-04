@@ -7,6 +7,10 @@
   icon: 'fa-brands fa-bluesky'
   url: 'https://bsky.app/profile/pds.alesr.me'
 
+- type: signal
+  icon: 'fa-brands fa-signal-messenger'
+  url: 'https://signal.me/#eu/alesr.01'
+
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
